@@ -23,3 +23,17 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+
+    - name: Calculate sum and difference of two numbers
+      run: |
+        # 数値aとbを仮定
+        a=5
+        b=10
+
+        # 和を計算
+        sum=$(($a + $b))
+        echo "Sum of $a and $b is $sum"
+
+        # 差を計算
+        diff=$(($a - $b))
+        echo "Difference between $a and $b is $diff"
